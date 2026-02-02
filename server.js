@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // MongoDB connection string - REPLACE WITH YOUR MONGODB ATLAS CONNECTION STRING
-const MONGODB_URI = process.env.MONGODB_URI || 'Here_Put_Your_MongoDB_Connection_String';
+const MONGODB_URI = 'Here_Put_Your_MongoDB_Connection_String';
 const DB_NAME = 'userManagementDB';
 const COLLECTION_NAME = 'users';
 
@@ -200,3 +200,4 @@ connectToDatabase().then(() => {
         console.log(`Server is running on http://localhost:${PORT}`);
     });
 });
+
